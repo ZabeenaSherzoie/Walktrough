@@ -13,7 +13,6 @@ if os.environ.get("DEVELOPMENT") == "True":
      if uri.startswith("postgres://"):
          uri = uri.replace("postgres://", "postgresql://", 1)
      app.config["SQLALCHEMY_DATABASE_URI"] = uri
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_URL")
 db = SQLAlchemy(app)
 
 from taskmanager import routes # noqa

@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     let selects = document.querySelectorAll('select');
     M.FormSelect.init(selects);
+   
+    var collapsible = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(collapsible);
+    
 });
 
 
